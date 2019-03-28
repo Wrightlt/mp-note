@@ -1,0 +1,8 @@
+ <radio-group class="pay-list" bindchange="changePayType">
+      <view class="" wx:for="{{ payTypes }}" wx:key="type-{{ index }}">
+          <text>{{ item.type }}</text>
+        <label class="radio {{ item.checked ? 'active' : '' }} {{ disabled }}">
+          <radio value="{{ item.type }}" checked="{{ item.checked }}"/>
+        </label>
+      </view>
+    </radio-group>
